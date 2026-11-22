@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="113 0 97 76" width="970" height="760" role="img" aria-label="Arctic AI facets">
+<!-- Arctic AI — top-right corner cluster (pin to the top-right corner of the canvas). Taken 1:1 from the approved "Take the lead" A4 (units: mm of an A4 page). Do not recolour or redraw; scale and crop only. -->
+<defs>
+<linearGradient id="m0" gradientUnits="userSpaceOnUse" x1="142.17" y1="26.66" x2="160.67" y2="14.76"><stop offset="0" stop-color="#013047"/><stop offset=".5" stop-color="#04476b"/><stop offset="1" stop-color="#0f8584"/></linearGradient>
+<linearGradient id="m1" gradientUnits="userSpaceOnUse" x1="195.7" y1="30.8" x2="235.2" y2="-2.5"><stop offset="0" stop-color="#0b6f82"/><stop offset=".5" stop-color="#18bf85"/><stop offset="1" stop-color="#1efd6e"/></linearGradient>
+<linearGradient id="m2" gradientUnits="userSpaceOnUse" x1="200.04" y1="35.95" x2="239.54" y2="2.65"><stop offset="0" stop-color="#023651"/><stop offset=".5" stop-color="#075980"/><stop offset="1" stop-color="#15aa87"/></linearGradient>
+<linearGradient id="m3" gradientUnits="userSpaceOnUse" x1="192.32" y1="48.69" x2="221.92" y2="22.89"><stop offset="0" stop-color="#0a6a81"/><stop offset=".5" stop-color="#17ba86"/><stop offset="1" stop-color="#1efd6e"/></linearGradient>
+<linearGradient id="m4" gradientUnits="userSpaceOnUse" x1="195.88" y1="52.78" x2="225.48" y2="26.98"><stop offset="0" stop-color="#013047"/><stop offset=".5" stop-color="#04476b"/><stop offset="1" stop-color="#0f8584"/></linearGradient>
+<linearGradient id="m5" gradientUnits="userSpaceOnUse" x1="201.1" y1="76.22" x2="214.7" y2="31.92"><stop offset="0" stop-color="#013047"/><stop offset=".5" stop-color="#033f5e"/><stop offset="1" stop-color="#0b6f82"/></linearGradient>
+<linearGradient id="m6" gradientUnits="userSpaceOnUse" x1="201.18" y1="76.6" x2="215.28" y2="48.9"><stop offset="0" stop-color="#06527c"/><stop offset=".5" stop-color="#139f86"/><stop offset="1" stop-color="#1cea75"/></linearGradient>
+<linearGradient id="m24" gradientUnits="userSpaceOnUse" x1="153.73" y1="50.37" x2="195.59" y2="3.58"><stop offset="0" stop-color="#033c5a"/><stop offset=".5" stop-color="#086080"/><stop offset="1" stop-color="#15a987"/></linearGradient>
+<linearGradient id="m26" gradientUnits="userSpaceOnUse" x1="190.92" y1="27.56" x2="231.22" y2="-10.51"><stop offset="0" stop-color="#013047"/><stop offset=".5" stop-color="#054a70"/><stop offset="1" stop-color="#0e8483"/></linearGradient>
+<linearGradient id="m27" gradientUnits="userSpaceOnUse" x1="184.34" y1="20.59" x2="224.63" y2="-17.48"><stop offset="0" stop-color="#096881"/><stop offset=".5" stop-color="#16b188"/><stop offset="1" stop-color="#1df272"/></linearGradient>
+<linearGradient id="m28" gradientUnits="userSpaceOnUse" x1="197.48" y1="4.81" x2="221.25" y2="-25.23"><stop offset="0" stop-color="#096480"/><stop offset=".5" stop-color="#16ad87"/><stop offset="1" stop-color="#1dee73"/></linearGradient>
+<linearGradient id="m33" gradientUnits="userSpaceOnUse" x1="213.36" y1="-32.74" x2="159.14" y2="13.71"><stop offset="0" stop-color="#023a57"/><stop offset=".5" stop-color="#075b80"/><stop offset="1" stop-color="#14a386"/></linearGradient>
+<linearGradient id="m34" gradientUnits="userSpaceOnUse" x1="164.11" y1="19.51" x2="218.34" y2="-26.93"><stop offset="0" stop-color="#055079"/><stop offset=".5" stop-color="#119385"/><stop offset="1" stop-color="#1ad87b"/></linearGradient>
+<linearGradient id="m35" gradientUnits="userSpaceOnUse" x1="148.2" y1="45.42" x2="190.05" y2="-1.37"><stop offset="0" stop-color="#129785"/><stop offset=".5" stop-color="#1bdb7a"/><stop offset="1" stop-color="#1efd6e"/></linearGradient>
+<linearGradient id="m36" gradientUnits="userSpaceOnUse" x1="148.39" y1="-15.62" x2="111.82" y2="30.4"><stop offset="0" stop-color="#129a86"/><stop offset=".5" stop-color="#1bde79"/><stop offset="1" stop-color="#1efd6e"/></linearGradient>
+<linearGradient id="m37" gradientUnits="userSpaceOnUse" x1="120.21" y1="14.58" x2="151.93" y2="-25.52"><stop offset="0" stop-color="#013047"/><stop offset=".5" stop-color="#044567"/><stop offset="1" stop-color="#0c7682"/></linearGradient>
+<linearGradient id="m42" gradientUnits="userSpaceOnUse" x1="153.9" y1="15.61" x2="174.53" y2="-8.05"><stop offset="0" stop-color="#013047"/><stop offset=".5" stop-color="#04476a"/><stop offset="1" stop-color="#0d7b83"/></linearGradient>
+<linearGradient id="m43" gradientUnits="userSpaceOnUse" x1="146.56" y1="9.21" x2="167.19" y2="-14.45"><stop offset="0" stop-color="#085e80"/><stop offset=".5" stop-color="#15a787"/><stop offset="1" stop-color="#1ce975"/></linearGradient>
+<linearGradient id="m44" gradientUnits="userSpaceOnUse" x1="118.72" y1="35.89" x2="155.29" y2="-10.14"><stop offset="0" stop-color="#07587f"/><stop offset=".5" stop-color="#13a186"/><stop offset="1" stop-color="#1ce477"/></linearGradient>
+<linearGradient id="m48" gradientUnits="userSpaceOnUse" x1="114.49" y1="10.06" x2="146.22" y2="-30.04"><stop offset="0" stop-color="#013047"/><stop offset=".5" stop-color="#023853"/><stop offset="1" stop-color="#06567f"/></linearGradient>
+</defs>
+<g stroke-width=".22" stroke-linejoin="round">
+<path d="M150.9 13L162.5 17.6L144 29.5Z" fill="url(#m0)" stroke="url(#m0)"/>
+<path d="M197.3 32.7L209.6 12.6L236.8 -0.6Z" fill="url(#m1)" stroke="url(#m1)"/>
+<path d="M224.8 26.2L236.8 -0.6L197.3 32.7Z" fill="url(#m2)" stroke="url(#m2)"/>
+<path d="M224.8 26.2L197.3 32.7L195.2 52Z" fill="url(#m3)" stroke="url(#m3)"/>
+<path d="M195.2 52L224.8 26.2L214.5 39.3Z" fill="url(#m4)" stroke="url(#m4)"/>
+<path d="M199.4 75.7L213 31.4L213.5 48Z" fill="url(#m5)" stroke="url(#m5)"/>
+<path d="M199.4 75.7L213.5 48L214 60.2Z" fill="url(#m6)" stroke="url(#m6)"/>
+<path d="M151.12 48.03L187.13 23.55L192.98 1.25Z" fill="url(#m24)" stroke="url(#m24)"/>
+<path d="M187.13 23.55L236.8 -0.6L227.43 -14.52Z" fill="url(#m26)" stroke="url(#m26)"/>
+<path d="M192.98 1.25L187.13 23.55L227.43 -14.52Z" fill="url(#m27)" stroke="url(#m27)"/>
+<path d="M216.74 -28.79L192.98 1.25L227.43 -14.52Z" fill="url(#m28)" stroke="url(#m28)"/>
+<path d="M216.74 -28.79L171.58 -10.62L162.52 17.65Z" fill="url(#m33)" stroke="url(#m33)"/>
+<path d="M192.98 1.25L216.74 -28.79L162.52 17.65Z" fill="url(#m34)" stroke="url(#m34)"/>
+<path d="M151.12 48.03L192.98 1.25L162.52 17.65Z" fill="url(#m35)" stroke="url(#m35)"/>
+<path d="M117.59 12.51L114.41 32.46L150.98 -13.57Z" fill="url(#m36)" stroke="url(#m36)"/>
+<path d="M149.32 -27.59L117.59 12.51L150.98 -13.57Z" fill="url(#m37)" stroke="url(#m37)"/>
+<path d="M162.52 17.65L171.58 -10.62L150.95 13.04Z" fill="url(#m42)" stroke="url(#m42)"/>
+<path d="M171.58 -10.62L150.98 -13.57L150.95 13.04Z" fill="url(#m43)" stroke="url(#m43)"/>
+<path d="M150.98 -13.57L114.41 32.46L150.95 13.04Z" fill="url(#m44)" stroke="url(#m44)"/>
+<path d="M117.59 12.51L149.32 -27.59L113.2 -1.05Z" fill="url(#m48)" stroke="url(#m48)"/>
+</g>
+</svg>

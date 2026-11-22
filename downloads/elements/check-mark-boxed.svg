@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 6 140 146" width="140" height="146" role="img" aria-label="Arctic AI ticked box">
+  <!-- Arctic AI check-mark in its tick box. Navy box for light backgrounds; set the rect stroke to #fefefe on navy. -->
+  <defs>
+    <linearGradient id="ckb-short" gradientUnits="userSpaceOnUse" x1="13" y1="93" x2="58" y2="120">
+      <stop offset="0" stop-color="#06547f"/>
+      <stop offset="1" stop-color="#17b588"/>
+    </linearGradient>
+    <linearGradient id="ckb-long" gradientUnits="userSpaceOnUse" x1="50" y1="140" x2="136" y2="10">
+      <stop offset="0" stop-color="#17b588"/>
+      <stop offset=".8" stop-color="#1efd6e"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="49" width="93" height="93" fill="none" stroke="#013047" stroke-width="10"/>
+  <path d="M13 93L33 72L58 101L50 140Z" fill="url(#ckb-short)"/>
+  <path d="M58 101L136 10L50 140Z" fill="url(#ckb-long)"/>
+</svg>

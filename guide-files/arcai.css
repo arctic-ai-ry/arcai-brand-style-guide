@@ -1,0 +1,205 @@
+/* Arctic AI Association ry — shared building blocks for still and animated layouts.
+   Requires ../tokens/tokens.css and the two Google Fonts (see tokens.css).
+   Every measure comes from the approved A4 sheets, expressed in --u (1% of the canvas width)
+   or in em, so the same classes work on A4, a 1080 px post or a web page. */
+
+/* ---------- two languages in one template ---------- */
+/* Text is written twice: <span lang="fi">…</span><span lang="en">…</span>. components/lang.js sets data-lang on <html>
+   (Finnish by default, ?lang=en for English) and this rule hides the other one. */
+html[data-lang="fi"] [lang="en"],
+html[data-lang="en"] [lang="fi"] { display: none !important; }
+
+/* ---------- the canvas ---------- */
+/* A fixed-size artboard. Set --w and --h (unitless px) on the element:
+   <main class="arcai-canvas" style="--w:1080; --h:1350">  */
+.arcai-canvas {
+  --u: calc(var(--w) * 0.01px);
+  --m: calc(var(--u) * 6.7);                    /* side margin */
+  position: relative;
+  width: calc(var(--w) * 1px);
+  height: calc(var(--h) * 1px);
+  overflow: hidden;
+  background: var(--arcai-white);
+  color: var(--arcai-navy);
+  font-family: var(--arcai-font-text);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.arcai-canvas *, .arcai-canvas *::before, .arcai-canvas *::after { box-sizing: border-box; }
+/* Landscape canvases: type is sized from 0.75% of the width instead */
+.arcai-canvas--landscape { --u: calc(var(--w) * 0.0075px); }
+
+/* ---------- logo ---------- */
+.arcai-logo { display: block; width: calc(var(--u) * 27.6); height: auto; }
+
+/* ---------- title: Archivo 900, width 125%, uppercase ---------- */
+.arcai-title {
+  margin: 0;
+  font-family: var(--arcai-font-display);
+  font-weight: 900;
+  font-stretch: 125%;
+  font-size: calc(var(--u) * 11);               /* down to 7u for long lines; never smaller */
+  line-height: 0.9;
+  letter-spacing: -0.012em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* The check-mark that ends a title like a full stop: its lower tip sits on the baseline.
+   <h1 class="arcai-title">Open to<br>everyone<img class="arcai-tick" src="…/check-mark.svg" alt=""></h1> */
+.arcai-tick {
+  display: inline-block;
+  width: 0.86em;
+  height: 0.92em;
+  margin-left: 0.04em;
+  vertical-align: -0.027em;
+}
+
+/* ---------- text ---------- */
+.arcai-lead {
+  margin: 0;
+  font-weight: 400;
+  font-size: calc(var(--u) * 4.5);
+  line-height: 1.16;
+  letter-spacing: -0.005em;
+}
+.arcai-lead b, .arcai-lead strong { font-weight: 700; }
+
+.arcai-heading {
+  margin: 0;
+  font-weight: 700;
+  font-size: calc(var(--u) * 4.9);
+  line-height: 1;
+  letter-spacing: -0.008em;
+  color: var(--arcai-blue);
+}
+
+.arcai-link {
+  margin: 0;
+  font-weight: 700;
+  font-size: calc(var(--u) * 4.2);
+  line-height: 1;
+  color: var(--arcai-blue);
+  text-decoration: none;
+}
+
+/* ---------- check-mark list (on white) ---------- */
+.arcai-checks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: calc(var(--u) * 4);
+  line-height: 1.38;
+}
+.arcai-checks > li { position: relative; padding-left: 0.97em; }
+.arcai-checks > li::before {
+  content: "";
+  position: absolute;
+  left: -0.07em;
+  top: 0.2em;
+  width: 0.78em;
+  height: 0.834em;
+  background: url("../downloads/elements/check-mark.svg") no-repeat center / contain;
+}
+
+/* ---------- ticked-box list (large, on a navy band) ---------- */
+.arcai-checks--boxed {
+  font-size: calc(var(--u) * 7.7);
+  line-height: 1.24;
+  letter-spacing: -0.01em;
+}
+.arcai-checks--boxed > li { padding-left: 1.51em; }
+.arcai-checks--boxed > li::before {
+  left: 0;
+  top: -0.062em;
+  width: 1.1215em;
+  height: 1.17em;
+  background-image: url("../downloads/elements/check-mark-boxed.svg");
+}
+.arcai-band .arcai-checks--boxed > li::before { background-image: url("../downloads/elements/check-mark-boxed-on-navy.svg"); }
+.arcai-band .arcai-checks:not(.arcai-checks--boxed) > li::before { background-image: url("../downloads/elements/check-mark-on-navy.svg"); }
+
+/* ---------- navy band: edge to edge ---------- */
+.arcai-band {
+  background: var(--arcai-gradient-navy);
+  color: var(--arcai-white);
+  padding: calc(var(--u) * 6.2) var(--m);
+}
+
+/* ---------- green call-to-action band with a slanted end ---------- */
+/* Set --band-h. The slant is 0.425 × the band height, as on the approved sheet. */
+.arcai-cta-band {
+  --band-h: calc(var(--u) * 19);
+  display: flex;
+  align-items: center;
+  height: var(--band-h);
+  padding-left: var(--m);
+  background: var(--arcai-gradient-cta);
+  color: var(--arcai-navy);
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--band-h) * 0.425) 100%, 0 100%);
+}
+.arcai-cta {
+  margin: 0;
+  font-family: var(--arcai-font-display);
+  font-weight: 900;
+  font-stretch: 125%;
+  font-size: calc(var(--u) * 7.4);
+  line-height: 0.92;
+  letter-spacing: -0.012em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.arcai-arrow {
+  display: inline-block;
+  width: 1.7em;
+  height: 0.8em;
+  margin-left: 0.3em;
+  vertical-align: -0.06em;
+}
+
+/* ---------- gradient line: marks the top edge of a screen, of a document's content, or of an image ---------- */
+/* Always horizontal, blue on the left, as wide as the thing it sits on. One per page.
+   Only on pieces without facets and without bands. */
+.arcai-gradient-line {
+  height: 4px;
+  background: linear-gradient(to right, var(--arcai-blue), var(--arcai-teal), var(--arcai-flare));
+  background: linear-gradient(to right in oklab, var(--arcai-blue), var(--arcai-teal), var(--arcai-flare));
+}
+/* top of a screen canvas (video, slide) */
+.arcai-canvas > .arcai-gradient-line { position: absolute; left: 0; right: 0; top: 0; height: calc(var(--u) * 0.6); }
+/* print: 1 mm on A4 and smaller. Set --line for other formats (1.5 mm on A3, 0.5% of the width beyond that). */
+.arcai-gradient-line--print { height: var(--line, 1mm); }
+
+/* ---------- an image with the gradient line flush on its top edge ---------- */
+/* <figure class="arcai-image"><img src="photo.jpg" alt="…"></figure>
+   Square corners, no filters, no text on top. The line is exactly as wide as the image. */
+.arcai-image { display: block; margin: 0; }
+.arcai-image::before {
+  content: "";
+  display: block;
+  height: var(--line, 1mm);
+  background: linear-gradient(to right, var(--arcai-blue), var(--arcai-teal), var(--arcai-flare));
+  background: linear-gradient(to right in oklab, var(--arcai-blue), var(--arcai-teal), var(--arcai-flare));
+}
+.arcai-image > img { display: block; width: 100%; height: auto; }
+.arcai-canvas .arcai-image { --line: calc(var(--w) * 0.005px); }   /* 0.5% of the canvas width */
+
+/* ---------- QR tile ---------- */
+/* <div class="arcai-qr"><img src="your-qr.png" alt="QR code: arcai.fi"></div>  — navy modules on white */
+.arcai-qr {
+  width: calc(var(--u) * 22.4);
+  height: calc(var(--u) * 22.4);
+  padding: calc(var(--u) * 2.14);
+  background: #fff;
+  outline: calc(var(--u) * 0.48) solid var(--arcai-navy);
+}
+.arcai-qr > img, .arcai-qr > svg { display: block; width: 100%; height: 100%; }
+
+/* ---------- facets: the approved clusters, pinned to their corner ---------- */
+.arcai-facets { position: absolute; display: block; height: auto; pointer-events: none; }
+.arcai-facets--top-right { top: 0; right: 0; width: 46.2%; }
+.arcai-facets--bottom-right { bottom: 0; right: 0; width: 64.8%; }
+.arcai-facets--right-edge { right: 0; width: 4.76%; }
+
+/* ---------- aurora layer inside a canvas ---------- */
+.arcai-aurora { position: absolute; inset: 0; }

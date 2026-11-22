@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 4" width="1200" height="4" preserveAspectRatio="none" role="img" aria-label="Arctic AI gradient line">
+  <!-- The gradient line: blue -> teal -> flare. Stretch to the full width of the screen; keep it 4 px high (0.4% of the width in video). -->
+  <defs>
+    <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#06547f"/>
+      <stop offset=".5" stop-color="#17b588"/>
+      <stop offset="1" stop-color="#1efd6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="4" fill="url(#gl)"/>
+</svg>
